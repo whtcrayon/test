@@ -33,6 +33,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400");
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 *,
 *::before,
 *::after {
@@ -97,6 +98,9 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+h1 {
+    
 }
 
 p {
@@ -777,6 +781,8 @@ h6,
 h1,
 .h1 {
   font-size: 2.5rem;
+    font-family: 'Old Standard TT', serif;
+
 }
 
 h2,
@@ -11889,8 +11895,9 @@ h4,
 h5 {
   display: inline-block;
   margin: 0;
-  text-transform: uppercase;
   font-style: normal;
+-webkit-text-stroke-width: 1px;
+
 }
 
 h1 {
@@ -12022,15 +12029,32 @@ nav h1 {
   font-size: 100px;
   line-height: calc(150px + 1px *2);
   width: 100%;
+    font-family: 'Old Standard TT', serif;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+
 }
 
 nav h1 a {
   display: inline-block;
   width: 100%;
+    font-family: 'Old Standard TT', serif;
+       color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+
 }
 
 nav h1 span.stretch_it {
   display: inline-block;
+    font-family: 'Old Standard TT', serif;
+       -webkit-text-stroke-width: 1px;
+
 }
 
 @media (max-width: 575.98px) {
@@ -12083,6 +12107,7 @@ nav div.anchor:hover a {
   }
   nav div.anchor.brand {
     border-bottom: solid 1px #000;
+      font-family: 'Old Standard TT', serif;
   }
 }
 
@@ -14658,6 +14683,11 @@ a:hover {
 .anchor:hover {
   background: #000;
   color: #fff;
+
+}
+.anchor>img:hover {
+  
+    filter: invert(100%);
 }
 
 .anchor:hover>* {
@@ -14830,6 +14860,7 @@ nav.nav-fs div.anchor.brand {
 
 nav.nav-fs div.anchor.brand:hover {
   background-color: #fff;
+    font-family: 'Old Standard TT', serif;
 }
 
 nav.nav-fs div.anchor.brand:hover a {
