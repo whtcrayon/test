@@ -129,8 +129,8 @@
             <canvas id="canvas"></canvas>
 <div id="go">
             <h1><a href="/">
-            <span>white-crayon</span>
-                <!-- <img src="img/blacklogo.png" alt="Paris" class="center"> -->
+            <span></span>
+              <img id="logo"src="img/black_logo.png" alt="white-crayon-logo" width=1px class="center">
 
           </a></h1>
             </div>
@@ -262,6 +262,15 @@ window.onresize = function(e) {
   }
 );
       </script> 
+
+<script>
+  window.onload = function() {
+      var c = document.getElementById("canvas");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("logo");
+      ctx.drawImage(img, 10, 10);
+  }
+  </script>
     <!--jquery-->
     <script src="./js/vendor/jquery-3.3.1.min.js"></script>
 
