@@ -48,10 +48,12 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  height: 100vh;
 }
 
 @-ms-viewport {
   width: device-width;
+  min-height: 100vh;
 }
 
 article,
