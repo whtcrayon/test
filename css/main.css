@@ -811,8 +811,12 @@ h6,
 .h6 {
   font-size: 1rem;
 }
-#go {
+#gop {
 
+ padding: 0px;
+ }
+#go {
+ background-image: url("main.gif");
     position: absolute;
     top: 0;
     left: 0;
